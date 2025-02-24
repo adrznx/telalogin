@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.container {
+    width: 1400px;
+    height: 900px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end; /* Mantém os elementos organizados */
+    align-items: center;
+    padding-right: 30px;
+    margin-top: 150px;
+}
+
+.container-green {
+    position: relative;
+    left: -120px; /* Move o verde para fora do branco */
+    top: 340px; /* Mantém o verde fixo */
+    transform: translateY(-42%); /* Garante o alinhamento vertical correto */
+    background-color: #4CAF50;
+    width: 600px;
+    height: 800px; /* Mantém o tamanho do verde fixo */
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon img {
+    width: 270px;
+}
+
+
+
+.highlight {
+    color: #d1e7d6;
+}
+
+.subtext {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+/* Estilização do bloco branco */
+.container-white {
+    width: 55%;
+    margin-top: -5px;
+    margin-left: -50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 400px;
+    padding-right: 35px;
+    background-color: #ECECEC;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input {
+    background-color: #ECECEC;
+    width: 400px;
+    height: 45px;
+    border: none;
+    outline: none;
+
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 15px;
+    color: gray;
+    text-decoration: none;
+    margin-right: -40px;
+}
+
+.btn {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    margin-left: 130px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #E7E2E2;
+    margin-top: 10px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 50%;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 8px;
+}
