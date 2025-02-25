@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 1400px;
-    height: 900px;
+    height: 950px;
     background-color: white;
     border-radius: 18px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -35,8 +35,8 @@ body {
     left: -120px; /* Move o verde para fora do branco */
     top: 340px; /* Mantém o verde fixo */
     transform: translateY(-42%); /* Garante o alinhamento vertical correto */
-    background-color: #4CAF50;
-    width: 600px;
+    background-color: #5FCB69;
+    width: 800px;
     height: 800px; /* Mantém o tamanho do verde fixo */
     border-radius: 18px;
     display: flex;
@@ -54,7 +54,6 @@ body {
 }
 
 
-
 .highlight {
     color: #d1e7d6;
 }
@@ -70,7 +69,7 @@ body {
 .container-white {
     width: 55%;
     margin-top: -5px;
-    margin-left: -50px;
+    margin-left: -160px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -95,7 +94,7 @@ form {
 
 label {
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 
@@ -150,7 +149,7 @@ input {
     height: 38px;
     padding: 10px;
     margin-left: 130px;
-    background-color: #4CAF50;
+    background-color: #5FCB69;
     color: white;
     border: none;
     border-radius: 8px;
@@ -171,19 +170,141 @@ input {
 }
 
 .google-login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #E7E2E2;
-    margin-top: 10px;
-    margin-left: 170px;
+    display: inline-block; /* Para que o link envolva apenas a imagem */
+    background: none; /* Remove qualquer fundo */
     border: none;
-    border-radius: 50%;
+    padding: 0; /* Remove qualquer espaçamento extra */
+    margin-left: 190px;
+    margin-top: 10px;
 }
 
 .google-login img {
     width: 20px;
     margin-right: 8px;
+}
+
+#carousel-text {
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+/* Estiliza os indicadores (bolinhas) */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb; /* Cinza claro */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-indicators .dot.active {
+    background-color: white; /* Destaca a bolinha ativa */
+    width: 12px;
+    height: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .container-green {
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+    }
+    .container-white {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #carousel-text {
+        font-size: 16px;
+        margin-left: 90px;
+    }
+
+    .maoo {
+        margin-left: 90px;
+    }
+
+    .subtext {
+        margin-left: 90px;
+    }
+
+    .carousel-indicators {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+        
+    }
+    .container {
+        padding: 20px;
+    }
+    .container-green {
+        display: none;
+    }
+    .container-white {
+        margin-right: 50px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+
+    form {
+        margin-left: 50px;
+    }
+
+    #carousel-text {
+        margin-left: 190px;
+    }
+
+    .maoo {
+        margin-left: 190px;
+    }
+
+    .subtext {
+        margin-left: 190px;
+    }
+
+    .carousel-indicators{
+        margin-left: 160px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    .password-container input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    .container-green {
+        display: none;
+    }
+    .btn {
+        font-size: 12px;
+        height: 35px;
+    }
+
+   
+ 
 }
